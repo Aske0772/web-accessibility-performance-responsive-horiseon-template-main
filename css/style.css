@@ -135,6 +135,7 @@ main > h1 {
 
 .services img {
     max-width: 200px;
+    margin-right: 12px;
 }
 
 .services h2 {
