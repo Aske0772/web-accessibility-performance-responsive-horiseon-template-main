@@ -4,15 +4,14 @@
     margin: 0;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 body {
     background-color: #d9dcd6
 }
 
+.hero {
+    min-width: 100%;
+    height: auto;
+}
 
 header {
     padding: 20px;
@@ -76,23 +75,17 @@ p {
 
 main {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: stretch;
+    gap: 1.2rem;
+    padding: 20px;
 }
 
-.hero {
-    flex: 0 0 100%;
-    width: 100%;
-    margin-bottom: 25px;
-    display: block;
-    object-fit: cover;
-}
-
-.content {
+.marketing {
     display: flex;
-    gap:24px;
     flex-direction: column;
-
+    gap: 1.2rem;
 }
 
 .benefits {
@@ -166,18 +159,3 @@ footer h2 {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 768px) {
-    .hero {
-        min-height: 400px;
-    }
-    .content {
-        flex-direction: column;
-    }
-
-    .services {
-        max-width: 100%;
-        max-width: 100%;
-        padding: 20px;
-    }
-    
-}
