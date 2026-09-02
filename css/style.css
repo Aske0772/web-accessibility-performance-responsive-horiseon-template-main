@@ -51,6 +51,17 @@ a {
     text-decoration: none;
 }
 
+a:focus {
+    outline:none;
+}
+
+a:focus-visible {
+    outline: 3px solid currentcolor;
+    outline-offset: 4px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -124,6 +135,7 @@ p {
     margin-bottom: 10px;
     text-align: center;
 }
+
 
 .benefit-lead img {
     display: block;
