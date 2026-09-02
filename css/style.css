@@ -24,12 +24,12 @@ header {
     align-items: center;
 }
 
-header h1 {
+.logo {
     display: inline-block;
     font-size: 48px;
 }
 
-header h1 .seo {
+.logo .seo {
     color: #d9dcd6;
 }
 
