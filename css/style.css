@@ -74,31 +74,34 @@ p {
     font-size: 16px;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
 .hero {
-    height: 800px;
+    flex: 0 0 100%;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("/images/web-p-converted/digital-marketing-meeting.webp");
-    background-size: cover;
-    background-position: center;
+    display: block;
+    object-fit: cover;
 }
 
 .content {
-    width: 100%;
     display: flex;
     gap:24px;
-    justify-content: center;
-    align-items: stretch;
+    flex-direction: column;
 
 }
 
 .benefits {
     display: flex;
-    margin: 20px;
+    margin-left: 20px;
     padding: 20px;
-    flex-direction: row;
-    min-height: 300px;
-    min-width: 300px;
+    flex-direction:column;
+    min-height: auto;
+    max-width: 300px;
     padding: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #165B7E;
@@ -124,21 +127,27 @@ p {
     height: auto;
 }
 
-.search-engine-optimization, .online-reputation-management, .social-media-marketing {
+.services {
+    display: flex;
+    align-items: flex-start;
     margin-bottom: 20px;
-    padding: 50px;
+    margin-left: 20px;
+    padding: 20px;
     min-height: 300px;
+    max-width: 1500px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #00588F;
     color: #F8F8FF;
 }
 
-.search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
+
+.services img {
     max-height: auto;
     max-width: 200px;
+    padding-right: 20px;
 }
 
-.search-engine-optimization h2, .online-reputation-management h2, .social-media-marketing h2 {
+.services h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -165,9 +174,7 @@ footer h2 {
         flex-direction: column;
     }
 
-    .search-engine-optimization,
-    .online-reputation-management,
-    .social-media-marketing {
+    .services {
         max-width: 100%;
         max-width: 100%;
         padding: 20px;
