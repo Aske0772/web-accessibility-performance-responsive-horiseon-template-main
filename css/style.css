@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     background-color: #d9dcd6;
 }
@@ -71,10 +76,10 @@ p {
 }
 
 .hero {
-    height: 800px;
-    width: 100%;
+    max-height: auto;
+    max-width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-image: url("/images/web-p-converted/digital-marketing-meeting.webp");
     background-size: cover;
     background-position: center;
 }
@@ -126,7 +131,8 @@ p {
 .benefit-lead img, .benefit-brand img, .benefit-cost img {
     display: block;
     margin: 10px auto;
-    max-width: 150px;
+    max-width: 100%;
+    height: auto;
 }
 
 .search-engine-optimization, .online-reputation-management, .social-media-marketing {
@@ -139,7 +145,7 @@ p {
 }
 
 .search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
-    max-height: 200px;
+    max-height: auto;
     max-width: 200px;
 }
 
