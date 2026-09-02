@@ -9,7 +9,7 @@ body {
 }
 
 .hero {
-    min-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -82,33 +82,36 @@ main {
     padding: 20px;
 }
 
+main > h1 {
+    width: 100%;
+}
+
 .marketing {
     display: flex;
     flex-direction: column;
+    flex: 1;
     gap: 1.2rem;
 }
 
 .benefits {
     display: flex;
-    margin-left: 20px;
     padding: 20px;
     flex-direction:column;
-    min-height: auto;
-    max-width: 300px;
-    padding: 50px;
+    width: 300px;
+    flex-shrink: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #165B7E;
+    color: #F8F8FF;
 }
 
 .benefit-lead, .benefit-brand, .benefit-cost {
     margin-bottom: 32px;
-    color: #F8F8FF;
     min-height: auto;
     min-width: auto;
 
 }
 
-.benefit-brand h3, .benefit-cost h3, .benefit-lead h3 {
+.benefits h2, .benefit-brand h3, .benefit-cost h3, .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
 }
@@ -123,11 +126,7 @@ main {
 .services {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 20px;
-    margin-left: 20px;
     padding: 20px;
-    min-height: 300px;
-    max-width: 1500px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #00588F;
     color: #F8F8FF;
@@ -135,9 +134,7 @@ main {
 
 
 .services img {
-    max-height: auto;
     max-width: 200px;
-    padding-right: 20px;
 }
 
 .services h2 {
@@ -159,3 +156,38 @@ footer h2 {
 
 /* MEDIA QUERIES */
 
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav {
+        margin-right: 0;
+        padding-top: 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .benefits {
+        width: 100%;
+
+    }
+    
+    .services {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+}
